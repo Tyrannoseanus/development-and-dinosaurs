@@ -1,0 +1,4 @@
+.bullet-list .collection-item { list-style-type:disc;}
+ul.bullet-list {
+    padding-left: 25px;
+}
