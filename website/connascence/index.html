@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Development and Dinosaurs</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="orange" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">Development and Dinosaurs</a>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Connascence</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m8">
+                <h3>Connascence</h3>
+                <p>
+                    In this series of blog posts, we're going to look at how we can use connascence to help drive improvements to our  process and write better code. To do this, we're going to have to understand what connascence is, what it means, and how to identify it within our codebases.
+                </p>
+                <h4>What is connascence?</h4>
+                <blockquote>
+                    A relationship between two or more elements of software in which changing one necessitates changing the others in order to maintain overall correctness; a metric for such a relationship.
+                </blockquote>
+                <p>
+                    Connascence is a term used to describe the relationship and taxonomy of dependencies between two software components. Connascence as a term was first used by Meilir Page-Jones in the 90’s in the book <a target="_blank" href="https://amzn.to/3s6Keb1">What Every Programmer Should Know about Object-Oriented Design</a>, which was later updated to use UML instead of Page-Jones’s own modelling language in <a target="_blank" href="https://amzn.to/3I8QdSd">Fundamentals of Object-Oriented Design in UML (Addison-Wesley Object Technology Series)</a>.
+                </p>
+                <p>
+                    Put more simply, connascence describes the level of coupling within a codebase, which can be used to reason about the code quality. The more coupled a codebase is, the more difficult it becomes to change.
+                </p>
+                <p>
+                    There are two broad categories of connascence- static and dynamic. Within these categories there are 9 different types or levels. Finally, connascence also has three properties which can help us decide how bad the particular level of connascence is.
+                </p>
+                <p>
+                    The concept of connascence has not seen widespread popularity in the development community. However, there are a few pieces of information out there such as <a href="https://vimeo.com/10837903" target="_blank">this talk</a> by Jim Weirich and a series of <a href="https://silkandspinach.net/tag/connascence/" target="_blank">blog posts</a> and <a href="https://www.youtube.com/watch?v=fSr8LDcb0Y0" target="_blank">a talk</a> by Kevin Rutherford.
+                </p>
+                <h4>What can we do with connascence?</h4>
+                <p>
+                    We can use connascence to guide our software development practices, to write more maintainable code. By keeping connascence in mind when writing code, we can reduce the coupling within. By learning to identify connascence when we see it, we can perform refactoring to reduce connascence and improve quality.
+                </p>
+                <p>
+                    That’s where this series of posts come in. We’re going to go over the different levels of connascence and how to spot them in the wild (or at least in some contrived examples), as well as touch on the different properties of connascence to decide when we need to act. We'll then work through how to remove or replace the connascence with something else to avoid trouble with tightly coupled code in the future.
+                </p>
+                <p>
+                    We’re going to cover the following areas:
+                </p>
+
+                <h4>Static Connascence</h4>
+                <ul class="bullet-list">
+                    <li class="collection-item">Connascence of Name</li>
+                    <li class="collection-item">Connascence of Type</li>
+                    <li class="collection-item">Connascence of Meaning</li>
+                    <li class="collection-item">Connascence of Position</li>
+                    <li class="collection-item">Connascence of Algorithm</li>
+                </ul>
+
+                <h4>Dynamic Connascence</h4>
+                <ul class="bullet-list">
+                    <li class="collection-item">Connascence of Execution</li>
+                    <li class="collection-item">Connascence of Timing</li>
+                    <li class="collection-item">Connascence of Value</li>
+                    <li class="collection-item">Connascence of Identity</li>
+                </ul>
+
+                <h4>Properties of Connascence</h4>
+                <ul class="bullet-list">
+                    <li class="collection-item">Strength</li>
+                    <li class="collection-item">Locality</li>
+                    <li class="collection-item">Degree</li>
+                </ul>
+            </div>
+            <div class="col s12 m4">
+                <h3>All Posts</h3>
+                <ul class="collection">
+                    <a href="/connascence" class="collection-item blue-text">
+                        <h4>Connascence</h4>
+                    </a>
+                    <a href="/connascence/connascence-of-name" class="collection-item blue-text">
+                        Connascence of Name
+                    </a>
+                    <a href="/connascence/connascence-of-type" class="collection-item blue-text">
+                        Connascence of Type
+                    </a>
+                    <a href="/connascence/connascence-of-meaning" class="collection-item blue-text">
+                        Connascence of Meaning
+                    </a>
+                    <a href="/connascence/connascence-of-position" class="collection-item blue-text">
+                        Connascence of Position
+                    </a>
+                    <a href="/connascence/connascence-of-algorithm" class="collection-item blue-text">
+                        Connascence of Algorithm
+                    </a>
+                    <a href="/connascence/connascence-of-execution" class="collection-item blue-text">
+                        Connascence of Execution
+                    </a>
+                    <a href="/connascence/connascence-of-timing" class="collection-item blue-text">
+                        Connascence of Timing
+                    </a>
+                    <a href="/connascence/connascence-of-value" class="collection-item blue-text">
+                        Connascence of Value
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Development and Dinosaurs</h5>
+                <p class="grey-text text-lighten-4">
+                    Development and Dinosaurs is like any other development blog, except it has dinosaurs. Dinosaurs are probably a good enough differentiator to make writing this blog worthwhile.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
