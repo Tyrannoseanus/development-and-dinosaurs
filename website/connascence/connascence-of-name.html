@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Development and Dinosaurs</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="orange" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">Development and Dinosaurs</a>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center orange-text">Connascence</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m8">
+                <h3>Connascence of Name</h3>
+                <p>
+                    We're going to start at the bottom of the connascence pile with connascence of name. Connascence of name is a static connascence. A connascence is described as static if it can be discovered by a visual examination of the code as written, as opposed to dynamic connascences that can only be discovered at runtime.
+                </p>
+                <p>
+                    Connascence of name means that multiple components within a system must agree on the name of a particular entity- these components are then coupled together based on that name. Consider the following classes as an example:
+                </p>
+                <pre><code class="language-kotlin">
+                    class Dinosaur {
+
+                      fun feed() {
+                        // Eat
+                      }
+
+                    }
+                </code></pre>
+                <pre><code class="language-kotlin">
+                    class DinosaurHandler {
+
+                      fun feedDinosaur(val dinosaur: Dinosaur) {
+                        dinosaur.feed()
+                      }
+
+                    }
+                </code></pre>
+                <p>
+                    So for now let's ignore the design patterns (or lack thereof) or what the dinosaur is actually eating in this scenario. Focussing on the connascence, we have an example of connascence of name here- in both the name of the <code class="orange-text">Dinosaur</code> class and the <code class="orange-text">feed</code> function. Both the <code class="orange-text">Dinosaur</code> class and the <code class="orange-text">DinosaurHandler</code> class need to agree upon the name of the <code class="orange-text">Dinosaur</code> class and the <code class="orange-text">feed</code> function. If you change the name of the <code class="orange-text">Dinosaur</code> class to <code class="orange-text">Chicken</code>, the <code class="orange-text">DinosaurHandler</code> isn't going to work any more unless you change it on that side too. The same goes for the <code class="orange-text">feed</code> function- change it to <code class="orange-text">devour</code> or anything else and we're not going to be feeding anything with that <code class="orange-text">DinosaurHandler</code> without making the same change.
+                </p>
+                <p>
+                    Ok... so what? Well, in this case nothing. Connascence of name is definitely connascence, in that it definitely describes a relationship between different software components that must change at the same time in order to preserve correctness. But... that's the way software works at a fundamental level- it's just how we refer to different components and entities. That's why connascence of name is the weakest level of connascence- if every coupling between components in our codebase can be reduced to a dependency on a name, then we're not in a bad place.
+                </p>
+                <p>
+                    One thing to keep in mind when thinking about connascence of name is that if you want to change the name of something in the future, you're going to have to change that name everywhere that it is referenced. Not a huge problem in statically typed compiled languages like Kotlin, as the code won't successfully compile until you fix the references to the old name- but it will mean potentially larger changes as the codebase grows.
+                </p>
+            </div>
+            <div class="col s12 m4">
+                <h3>All Posts</h3>
+                <ul class="collection">
+                    <a href="/connascence" class="collection-item blue-text">
+                        <h4>Connascence</h4>
+                    </a>
+                    <a href="/connascence/connascence-of-name" class="collection-item blue-text">
+                        Connascence of Name
+                    </a>
+                    <a href="/connascence/connascence-of-type" class="collection-item blue-text">
+                        Connascence of Type
+                    </a>
+                    <a href="/connascence/connascence-of-meaning" class="collection-item blue-text">
+                        Connascence of Meaning
+                    </a>
+                    <a href="/connascence/connascence-of-position" class="collection-item blue-text">
+                        Connascence of Position
+                    </a>
+                    <a href="/connascence/connascence-of-algorithm" class="collection-item blue-text">
+                        Connascence of Algorithm
+                    </a>
+                    <a href="/connascence/connascence-of-execution" class="collection-item blue-text">
+                        Connascence of Execution
+                    </a>
+                    <a href="/connascence/connascence-of-timing" class="collection-item blue-text">
+                        Connascence of Timing
+                    </a>
+                    <a href="/connascence/connascence-of-value" class="collection-item blue-text">
+                        Connascence of Value
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Development and Dinosaurs</h5>
+                <p class="grey-text text-lighten-4">
+                    Development and Dinosaurs is like any other development blog, except it has dinosaurs. Dinosaurs are probably a good enough differentiator to make writing this blog worthwhile.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script>
+document.querySelectorAll("pre code").forEach((element) =>
+    {
+        let html = element.innerHTML
+        let pattern = html.match(/\s*\n[\t\s]*/)
+        let formattedHtml = html.replace(new RegExp(pattern, "g"),'\n').trim()
+
+        element.innerHTML = formattedHtml
+    }
+)
+</script>
+</body>
+</html>
