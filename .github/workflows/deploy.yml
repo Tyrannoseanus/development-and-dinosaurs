@@ -1,0 +1,21 @@
+name: 🚀 Deploy website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: 🚀 Deploy website
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.4.0
+    - name: 🚢 Ship it!
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        local-dir: ./website/
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
