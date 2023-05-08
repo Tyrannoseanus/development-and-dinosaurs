@@ -12,10 +12,18 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.4.0
+    - name: 🔧 Set up Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - name: 🏠 NPM Install
+      run: npm install
+    - name: 👷 NPM Build
+      run: npm run build
     - name: 🚢 Ship it!
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        local-dir: ./website/
+        local-dir: ./build/
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
