@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://developmentanddinosaurs.co.uk/</loc>
-      <lastmod>2022-03-05</lastmod>
+      <lastmod>2023-05-08</lastmod>
    </url>
    <url>
       <loc>https://developmentanddinosaurs.co.uk/about</loc>
-      <lastmod>2022-03-05</lastmod>
+      <lastmod>2023-05-08</lastmod>
    </url>
    <url>
-      <loc>https://developmentanddinosaurs.co.uk/contact</loc>
-      <lastmod>2022-03-05</lastmod>
+      <loc>https://developmentanddinosaurs.co.uk/about/privacy</loc>
+      <lastmod>2023-05-08</lastmod>
    </url>
    <url>
       <loc>https://developmentanddinosaurs.co.uk/connascence</loc>
-      <lastmod>2022-03-05</lastmod>
+      <lastmod>2023-05-08</lastmod>
+   </url>
+   <url>
+      <loc>https://developmentanddinosaurs.co.uk/connascence-of-name</loc>
+      <lastmod>2023-05-08</lastmod>
    </url>
 </urlset>
