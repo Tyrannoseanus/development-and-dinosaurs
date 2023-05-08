@@ -1,0 +1,11 @@
+img.logo {
+  vertical-align: text-bottom;
+}
+img.bigLogo {
+  border-radius:100%;
+  border:5px solid #ff9800;
+}
+.bullet-list .collection-item { list-style-type:disc;}
+ul.bullet-list {
+    padding-left: 25px;
+}
