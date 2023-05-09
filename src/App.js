@@ -13,6 +13,7 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Connascence from './Connascence/Connascence';
 import ConnascenceOfName from './Connascence/ConnascenceOfName';
+import ConnascenceOfType from './Connascence/ConnascenceOfType';
 
 class App extends Component {
   useEffect() {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/about/privacy" element={<Privacy />} />
             <Route path="/connascence" element={<Connascence />} />
             <Route path="/connascence/connascence-of-name" element={<ConnascenceOfName />} />
+            <Route path="/connascence/connascence-of-type" element={<ConnascenceOfType />} />
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

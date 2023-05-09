@@ -53,7 +53,9 @@ class Connascence extends Component {
                                     <li className="collection-item"><Link to="/connascence/connascence-of-name" className="collection-item blue-text">
                                         Connascence of Name
                                     </Link></li>
-                                    <li className="collection-item">Connascence of Type</li>
+                                    <li className="collection-item"><Link to="/connascence/connascence-of-type" className="collection-item blue-text">
+                                        Connascence of Type
+                                    </Link></li>
                                     <li className="collection-item">Connascence of Meaning</li>
                                     <li className="collection-item">Connascence of Position</li>
                                     <li className="collection-item">Connascence of Algorithm</li>

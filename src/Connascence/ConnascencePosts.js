@@ -13,6 +13,9 @@ class ConnascencePosts extends Component {
                     <Link to="/connascence/connascence-of-name" className="collection-item blue-text">
                         Connascence of Name
                     </Link>
+                    <Link to="/connascence/connascence-of-type" className="collection-item blue-text">
+                        Connascence of Type
+                    </Link>
                 </ul>
             </div>
         )
