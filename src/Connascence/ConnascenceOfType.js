@@ -6,7 +6,6 @@ import GoogleAd from "../Components/GoogleAd";
 import Navigation from "../Components/Navigation";
 import ConnascencePosts from "./ConnascencePosts";
 import { Link } from "react-router-dom";
-import ConnascenceOfName from "./ConnascenceOfName";
 
 class ConnascenceOfType extends Component {
     render() {
