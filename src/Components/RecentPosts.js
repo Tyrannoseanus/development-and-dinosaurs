@@ -7,6 +7,10 @@ class RecentPosts extends Component {
             <div className="col s12 m8">
                 <h3>Recent Posts</h3>
                 <RecentPost
+                    title="Connascence of Type"
+                    link="/connascence/connascence-of-type"
+                    description="Connascence of type is the second weakest form of static connascence. Connascence of type refers to when multiple components must agree on the type of a particular entity." />
+                <RecentPost
                     title="Connascence of Name"
                     link="/connascence/connascence-of-name"
                     description="Connascence of name is the weakest form of connascence in the static category. Connascence of name refers to when multiple components must agree on the name of a particular entity." />
